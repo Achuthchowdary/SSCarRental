@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            padding: 30px;
+            border-radius: 20px;
+            position: relative;
+            background: #000;
+        }
+
+        .outer-border {
+            border: 2px solid #00ffff;
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+            box-shadow: 0 0 10px #00ffff,
+                        inset 0 0 10px #00ffff;
+        }
+
+        .inner-border {
+            border: 2px dashed #ff6b6b;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .title {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #111;
+        }
+
+        tr:nth-child(even) {
+            background-color: #0a0a0a;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #000;
+        }
+
+        .physics-score {
+            color: #00ff00;
+        }
+        .Maths{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="outer-border">
+            <div class="inner-border">
+                <div class="title">Marks table</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Maths</th>
+                            <th>Physics</th>
+                            <th>Computer Science</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>54</td>
+                            <td class="physics-score">32</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>54</td>
+                            <td class="physics-score">32</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>54</td>
+                            <td class="Maths">32</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>54</td>
+                            <td class="physics-score">32</td>
+                            <td>23</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

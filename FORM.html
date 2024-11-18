@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .form-group div {
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .radio-group {
+            display: flex;
+          
+            margin-bottom: 15px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h2>Event Details</h2>
+
+            <div class="form-group">
+                <div>
+                    <label for="event-name">Event Name</label>
+                    <input type="text" id="event-name" name="event-name" required>
+                </div>
+                <div>
+                    <label for="event-date">Event Date</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div>
+            <label for="event-start">Event Start Time</label>
+            <input type="time" id="event-start" name="event-start" required>
+                </div>
+                <div>
+            <label for="event-end">Event End Time</label>
+            <input type="time" id="event-end" name="event-end" required>
+                </div></div>
+            <label for="attendees">Name of Attendees</label>
+            <input type="text" id="attendees" name="attendees">
+
+            <label for="ministry">Ministry</label>
+            <select id="ministry" name="ministry">
+                <option value="adult">Adult</option>
+                <option value="youth">Youth</option>
+                <option value="children">Children</option>
+            </select>
+
+            <label for="contact-person">Contact Person</label>
+            <input type="text" id="contact-person" name="contact-person" required>
+
+            <div class="form-group">
+                <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+                </div><div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+</div></div>
+
+<div class="form-group">
+    <div>
+            <label>Will there be food at the event?</label>
+            <div class="radio-group">
+                <input type="radio" id="food-yes" name="food">
+                <label for="food-yes">Yes</label><br>
+                <input type="radio" id="food-no" name="food" value="no">
+                <label for="food-no">No</label><br>
+            </div></div>
+<div>
+            <label>Do you need childcare?</label>
+            <div class="radio-group">
+                <input type="radio" id="childcare-yes" name="childcare" value="yes">
+                <label for="childcare-yes">Yes</label><br>
+                <input type="radio" id="childcare-no" name="childcare" value="no">
+                <label for="childcare-no">No</label><br>
+            </div></div></div>
+            
+
+            <div class="form-group">
+                <div>
+            <label for="childcare-start">Childcare Start Time</label>
+            <input type="time" id="childcare-start" name="childcare-start">
+                </div>
+                <div>
+            <label for="childcare-end">Childcare End Time</label>
+            <input type="time" id="childcare-end" name="childcare-end">
+                </div></div>
+            <label for="details">Other Conditions/Details</label>
+            <textarea id="details" name="details" rows="4"></textarea>
+
+           
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
